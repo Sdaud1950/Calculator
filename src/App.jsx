@@ -6,7 +6,7 @@ import Display from "./Comp/Display";
 function App() {
   const [calval, setcalval] = useState("");
 
-  const onButtonClick = (buttontext) => {
+  const OnButtonClick = (buttontext) => {
     console.log(buttontext);
 
     if (buttontext=== "C"){
@@ -30,7 +30,7 @@ setcalval(newBtn)
     <>
       <div className={Style.calculator}>
         <Display DisplayValue={calval} />
-        <Buttoncontainer onButtonClick={onButtonClick} />
+        <Buttoncontainer onButtonClick={OnButtonClick} />
       </div>
     </>
   );
